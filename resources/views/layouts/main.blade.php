@@ -16,13 +16,13 @@
                 background-color: #fff;
                 color: #636b6f;
                 font-family: 'Raleway', sans-serif;
-                font-weight: 50;
-                height: 100vh;
+                min-height: 100vh;
                 margin: 0;
+                overflow-x: hidden;
             }
 
             .full-height {
-                height: 100vh;
+                min-height: 100vh;
             }
 
             .flex-center {
@@ -49,6 +49,14 @@
                 font-size: 60px;
             }
 
+            .lists-ul{
+              padding-bottom: 5vh;
+            }
+
+            .lists-ul li{
+              font-size: 30px;
+            }
+
             .links > a {
                 color: #636b6f;
                 padding: 0 25px;
@@ -59,8 +67,22 @@
                 text-transform: uppercase;
             }
 
-            .m-b-md {
-                margin-bottom: 30px;
+            .error{
+              width: 100%;
+              display: block;
+              color: #fff;
+              font-weight: 50;
+              font-size: 18px;
+              background-color: red;
+            }
+
+            .success{
+              width: 100vw;
+              display: block;
+              color: #fff;
+              font-weight: 50;
+              font-size: 18px;
+              background-color: green;
             }
         </style>
     </head>

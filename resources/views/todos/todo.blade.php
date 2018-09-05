@@ -1,10 +1,11 @@
 @extends('layouts.main')
 @section('content')
-  <h3>Todo</h3>
-  <ul>
+  <h3>Todo Lists</h3>
+  <ul class="lists-ul">
     <?php foreach ($todo_lists as $list): ?>
       <li>
-        {{{ $list->name }}}
+        <a href="{{ route('todos.show', [$list->id]) }}" id="tags">{{$list->name}}
+        </a>
       </li>
     <?php endforeach; ?>
   </ul>
